@@ -84,7 +84,7 @@ git branch -M main
 ⚠️ IMPORTANT : Remplace TON_NOM_UTILISATEUR par ton vrai nom GitHub :
 
 ```bash
-git remote add origin https://github.com/TON_NOM_UTILISATEUR/todo-app-cicd.git
+git remote add origin https://github.com/ainanyfitiagershom/todo-app-cicd.git
 ```
 
 ```bash
