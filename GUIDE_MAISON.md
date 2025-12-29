@@ -106,7 +106,7 @@ Si on te demande ton mot de passe, utilise un "Personal Access Token" :
 
 ---
 
-## ÉTAPE 6 : Démontrer un cas d'erreur (pour l'exposé)
+## ÉTAPE 6 : Démontrer un cas d'erreur (pour l'exposé) test
 
 Pour montrer ce qui se passe quand un test échoue :
 
