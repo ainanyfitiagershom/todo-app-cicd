@@ -28,14 +28,14 @@ function assertEqual(actual, expected) {
 
 test("Ajouter une tâche fonctionne", () => {
   const result = addTodo("Faire les courses");
-  assertEqual(result, false);
+  assertEqual(result, true);
   assertEqual(countTodos(), 1);
 });
 
 test("Supprimer une tâche fonctionne", () => {
   addTodo("Tâche à supprimer");
   const result = removeTodo(0);
-  assertEqual(result, false);
+  assertEqual(result, true);
   assertEqual(countTodos(), 0);
 });
 
