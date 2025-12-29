@@ -1,0 +1,38 @@
+# ===== PIPELINE CI/CD GITHUB ACTIONS =====
+# Ce fichier dit à GitHub quoi faire automatiquement
+
+name: CI/CD Pipeline
+
+# QUAND déclencher le pipeline ?
+on:
+  push:              # À chaque push (envoi de code)
+    branches:
+      - main         # Sur la branche main uniquement
+
+# QUE FAIRE ?
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest    # Machine virtuelle Linux
+
+    steps:
+      # Étape 1 : Récupérer le code
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      # Étape 2 : Installer Node.js
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Étape 3 : Lancer les tests
+      - name: Lancer les tests
+        run: npm test
+
+      # Étape 4 : Build (simulation)
+      - name: Build du projet
+        run: npm run build
+
+      # Étape 5 : Message de succès
+      - name: Déploiement simulé
+        run: echo "✅ Déploiement réussi ! (simulation)"
