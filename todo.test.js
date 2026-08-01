@@ -6,8 +6,8 @@ let testsTotal = 0;
 let testsPassed = 0;
 
 // Mettre 1 pour forcer l'échec du test correspondant, 0 pour le laisser réussir.
-const demoEchecs = [0, 0, 0];
-// const demoEchecs = [1, 1, 1]; // Décommenter pour forcer tous les tests à échouer
+// const demoEchecs = [0, 0, 0];
+const demoEchecs = [1, 1, 1]; // Décommenter pour forcer tous les tests à échouer
 
 function test(name, fn) {
   testsTotal++;
